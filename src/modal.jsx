@@ -20,7 +20,7 @@ export default (props) => {
       <Modal isOpen={modal} toggle={toggle} className={className}>
         <ModalHeader toggle={toggle}>Dom Click</ModalHeader>
         <ModalBody>
-          <Widget 
+          <Widget          
           value={value}
           setValue={setValue}
           limits={limits}/>

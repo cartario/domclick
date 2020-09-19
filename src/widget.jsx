@@ -3,9 +3,10 @@ import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import IconButton from '@material-ui/core/IconButton';
 
-export default ({value, setValue, limits})=> {
+export default React.memo(({value, setValue, limits})=> {
   const {MAX, MIN} = limits;
 
+  const valid = value >= MIN && value <= MAX;
   const [focus, setFocus] = useState(false);
 
   const clickHandler = (target) => {    
@@ -30,8 +31,14 @@ export default ({value, setValue, limits})=> {
       <section>
         <div>
           <label htmlFor="name">Введите число</label>
-          <input className="input" onBlur={()=>setFocus(false)} onFocus={()=>setFocus(true)} max={MAX} min={MIN} value={Number(value)} onChange={(e)=>setValue(e.target.value)} type="number" name="name" id="name"/>
-        </div>            
+          <input 
+            style={{width: '50%'}} 
+            className={valid ? "input input__success" : "input input__error"} 
+            onBlur={()=>setFocus(false)} 
+            onFocus={()=>setFocus(true)} value={value} max={MAX} min={MIN} type="number" name="name" id="name"             
+            onChange={(e)=>setValue(Number(e.target.value))} />
+        </div>  
+        {!valid && <p className="error">Число должно быть не более {MAX}</p>}          
         <IconButton onClick={()=>clickHandler("+")} color="primary">
           <AddCircleOutlineIcon />
         </IconButton>
@@ -41,4 +48,4 @@ export default ({value, setValue, limits})=> {
       </section>
     </div>
   );
-};
+});
