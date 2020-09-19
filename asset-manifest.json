@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/domclick/static/css/main.45ece5e8.chunk.css",
+    "main.js": "/domclick/static/js/main.55733e36.chunk.js",
+    "main.js.map": "/domclick/static/js/main.55733e36.chunk.js.map",
+    "runtime-main.js": "/domclick/static/js/runtime-main.dd44898f.js",
+    "runtime-main.js.map": "/domclick/static/js/runtime-main.dd44898f.js.map",
+    "static/css/2.d9ad5f5c.chunk.css": "/domclick/static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.fad8cfa4.chunk.js": "/domclick/static/js/2.fad8cfa4.chunk.js",
+    "static/js/2.fad8cfa4.chunk.js.map": "/domclick/static/js/2.fad8cfa4.chunk.js.map",
+    "index.html": "/domclick/index.html",
+    "precache-manifest.d37afd5999572c5322114030329c47eb.js": "/domclick/precache-manifest.d37afd5999572c5322114030329c47eb.js",
+    "service-worker.js": "/domclick/service-worker.js",
+    "static/css/2.d9ad5f5c.chunk.css.map": "/domclick/static/css/2.d9ad5f5c.chunk.css.map",
+    "static/css/main.45ece5e8.chunk.css.map": "/domclick/static/css/main.45ece5e8.chunk.css.map",
+    "static/js/2.fad8cfa4.chunk.js.LICENSE.txt": "/domclick/static/js/2.fad8cfa4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dd44898f.js",
+    "static/css/2.d9ad5f5c.chunk.css",
+    "static/js/2.fad8cfa4.chunk.js",
+    "static/css/main.45ece5e8.chunk.css",
+    "static/js/main.55733e36.chunk.js"
+  ]
+}
