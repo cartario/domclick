@@ -36,7 +36,9 @@ export default React.memo(({value, setValue, limits})=> {
             className={valid ? "input input__success" : "input input__error"} 
             onBlur={()=>setFocus(false)} 
             onFocus={()=>setFocus(true)} value={value} max={MAX} min={MIN} type="number" name="name" id="name"             
-            onChange={(e)=>setValue(Number(e.target.value))} />
+            onChange={(e)=>{
+              setValue(Number(e.target.value));              
+            }} />
         </div>  
         {!valid && <p className="error">Число должно быть не более {MAX}</p>}          
         <IconButton onClick={()=>clickHandler("+")} color="primary">
